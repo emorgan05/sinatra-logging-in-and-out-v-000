@@ -1,4 +1,4 @@
-class Helpers 
+class Helpers < ActiveRecord::Base
   require 'sinatra/base'
   
   def current_user(session)
