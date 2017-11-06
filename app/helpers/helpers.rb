@@ -1,5 +1,5 @@
 require 'sinatra/base'
-  
+
 class Helpers
 
   def current_user(session)
