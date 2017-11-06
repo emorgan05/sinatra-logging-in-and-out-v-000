@@ -6,14 +6,10 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <% if Helpers.is_logged_in? %>
-      <h1>Welcome <%= Helpers.current_user.username %></h1>
-      <h3>Your balance: <%= Helpers.current_user.balance %></h3>
+      <h1>Welcome <%= @user.username %></h1>
+      <h3>Your balance: <%= @user.balance %></h3>
 
       <a href="/logout">Log Out</a>
-    <% else %>
-      <p>You Must <a href="/">Log In</a> to View Your Balance</p>
-    <% end %>
 
   </body>
 </html>
